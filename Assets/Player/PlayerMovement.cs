@@ -8,13 +8,13 @@ public class PlayerMovement : MonoBehaviour
     public float rotateSpeed = 3.0f;
     public GameObject planet;
 
+
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     private Rigidbody planetRigidbody;
 
     private Animator animator;
 
-    private Vector3 mousePosition;
 
 
     void Start()
@@ -31,7 +31,8 @@ public class PlayerMovement : MonoBehaviour
         {
             Vector3 surfaceNormal = hit.normal;
             transform.rotation = Quaternion.FromToRotation(transform.up, surfaceNormal) * transform.rotation;
-            transform.position = hit.point + (transform.up * 0.1f);
+
+
         }
 
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
@@ -52,7 +53,9 @@ public class PlayerMovement : MonoBehaviour
 
             Vector3 groundNormal = transform.position - planet.transform.position;
             transform.rotation = Quaternion.FromToRotation(transform.up, groundNormal) * transform.rotation;
-        }else {
+        }
+        else
+        {
             //animator.SetBool("isWalking", false);
         }
 
@@ -66,7 +69,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 animator.SetBool("isRunning", true);
                 speed = 8.0f;
-            }else
+            }
+            else
             {
                 animator.SetBool("isRunning", false);
                 speed = 6.0f;
