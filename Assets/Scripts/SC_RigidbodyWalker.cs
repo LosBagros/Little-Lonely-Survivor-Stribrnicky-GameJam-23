@@ -39,6 +39,15 @@ public class SC_RigidbodyWalker : MonoBehaviour
         playerCamera.transform.localRotation = Quaternion.Euler(rotation.x, 0, 0);
         Quaternion localRotation = Quaternion.Euler(0f, Input.GetAxis("Mouse X") * lookSpeed, 0f);
         transform.rotation = transform.rotation * localRotation;
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 10.0f;
+        }
+        else
+        {
+            speed = 5.0f;
+        }
     }
 
     void FixedUpdate()
