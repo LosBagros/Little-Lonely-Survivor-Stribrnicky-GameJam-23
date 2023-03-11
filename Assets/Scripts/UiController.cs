@@ -3,17 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CollectItem : MonoBehaviour
+public class UiController : MonoBehaviour
 {
-    public GameObject player;
-    public float distanceThreshold = 1f;
-
     [SerializeField]
     private Sprite podstava;
 
     [SerializeField]
     private Sprite podstavaDark;
-
+    
     [SerializeField]
     private Sprite raketa;
 
@@ -41,7 +38,7 @@ public class CollectItem : MonoBehaviour
         Raketa(false);
         Cannon(false);
     }
-
+    
     public void Raketa(bool status)
     {
         if (status)
@@ -73,31 +70,6 @@ public class CollectItem : MonoBehaviour
         else
         {
             cannonObj.GetComponent<Image>().sprite = cannonDark;
-        }
-    }
-
-    private void Update()
-    {
-        if (Vector3.Distance(transform.position, player.transform.position) < distanceThreshold)
-        {
-            if (gameObject.name == "StartingMechanism5.1(Clone)")
-            {
-                Podstava(true);
-                Debug.Log("podstava");
-            }
-            else if(gameObject.name == "StartingMechanism5.2(Clone)")
-            {
-                Cannon(true);
-                Debug.Log("canon");
-            }
-            else if (gameObject.name == "StartingMechanism5.3(Clone)")
-            {
-                Raketa(true);
-                Debug.Log("raketa");
-            }
-                
-            Destroy(gameObject);
-            
         }
     }
 }
