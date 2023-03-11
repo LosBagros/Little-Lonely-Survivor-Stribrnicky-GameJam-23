@@ -8,7 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public float rotateSpeed = 3.0f;
     public GameObject planet;
 
-
+    private float MaxStamina = 100.0f;
+    private float CurrentStamina = 100.0f;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     private Rigidbody planetRigidbody;
@@ -65,15 +66,17 @@ public class PlayerMovement : MonoBehaviour
         if (horizontal != 0 || vertical != 0)
         {
             animator.SetBool("isWalking", true);
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.LeftShift) && CurrentStamina > 10)
             {
                 animator.SetBool("isRunning", true);
                 speed = 8.0f;
+                CurrentStamina -= 0.05f;
             }
             else
             {
                 animator.SetBool("isRunning", false);
                 speed = 6.0f;
+                CurrentStamina += 0.5f;
             }
         }
         else
