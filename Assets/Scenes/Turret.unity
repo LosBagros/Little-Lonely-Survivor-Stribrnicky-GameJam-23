@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc870b0ad143d2d47832b07b2b6d2291, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballPrefabTran: {fileID: 7258667899217253263, guid: 8ac29db5a88665e4cb244d10240f68ee, type: 3}
+  ballPrefabTran: {fileID: 6013009360841686280, guid: 6233824000721f74cbdcc243b83b6244, type: 3}
   force: 100
   xRotationMin: -60
   xRotationMax: 20
