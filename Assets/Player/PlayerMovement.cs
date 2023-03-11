@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody planetRigidbody;
 
     private Animator animator;
-
+    
 
     void Start()
     {
@@ -42,9 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
             Vector3 groundNormal = transform.position - planet.transform.position;
             transform.rotation = Quaternion.FromToRotation(transform.up, groundNormal) * transform.rotation;
-        }
-        else
-        {
+        }else {
             //animator.SetBool("isWalking", false);
         }
 
@@ -58,8 +56,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 animator.SetBool("isRunning", true);
                 speed = 8.0f;
-            }
-            else
+            }else
             {
                 animator.SetBool("isRunning", false);
                 speed = 6.0f;
