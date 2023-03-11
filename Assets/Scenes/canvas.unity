@@ -459,12 +459,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 340818faeed0e6445b4d2ba25676cdd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  podstava: {fileID: 2800000, guid: ec37072b0640f404f9fbac4fe2ec818c, type: 3}
-  podstavaDark: {fileID: 2800000, guid: 9f1277d4c83217749b92322aa9545164, type: 3}
-  raketa: {fileID: 2800000, guid: e266ed00244a95c40b07d6709992e4d3, type: 3}
-  raketaDark: {fileID: 2800000, guid: 57f7a93b698b29b49ad40f256b4b4f3b, type: 3}
-  cannon: {fileID: 2800000, guid: 046510e0ac9e83445b814207db798c68, type: 3}
-  cannonDark: {fileID: 2800000, guid: 38216afb21c88284c82628934ec89d1c, type: 3}
+  podstava: {fileID: 21300000, guid: ec37072b0640f404f9fbac4fe2ec818c, type: 3}
+  podstavaDark: {fileID: 21300000, guid: 9f1277d4c83217749b92322aa9545164, type: 3}
+  raketa: {fileID: 21300000, guid: e266ed00244a95c40b07d6709992e4d3, type: 3}
+  raketaDark: {fileID: 21300000, guid: 57f7a93b698b29b49ad40f256b4b4f3b, type: 3}
+  cannon: {fileID: 21300000, guid: 046510e0ac9e83445b814207db798c68, type: 3}
+  cannonDark: {fileID: 21300000, guid: 38216afb21c88284c82628934ec89d1c, type: 3}
   podstavaObj: {fileID: 1650373813}
   raketaObj: {fileID: 966911544}
   cannonObj: {fileID: 396558758}
