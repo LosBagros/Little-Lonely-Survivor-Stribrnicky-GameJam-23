@@ -80,6 +80,8 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isWalking", false);
         }
+
+        
     }
 
     void FixedUpdate()
@@ -87,4 +89,5 @@ public class PlayerMovement : MonoBehaviour
         planetRigidbody.AddTorque(transform.right * -Input.GetAxis("Horizontal") * rotateSpeed);
         planetRigidbody.AddTorque(transform.forward * Input.GetAxis("Vertical") * rotateSpeed);
     }
+
 }
