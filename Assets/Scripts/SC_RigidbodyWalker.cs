@@ -9,7 +9,7 @@ public class SC_RigidbodyWalker : MonoBehaviour
 {
     public float speed = 5.0f;
     public bool canJump = true;
-    public float jumpHeight = 2.0f;
+    public float jumpHeight = 15.0f;
     public Camera playerCamera;
     public float lookSpeed = 2.0f;
     public float lookXLimit = 60.0f;
