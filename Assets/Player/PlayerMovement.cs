@@ -26,6 +26,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, -transform.up, out hit, 10.0f))
+        {
+            Vector3 surfaceNormal = hit.normal;
+            transform.rotation = Quaternion.FromToRotation(transform.up, surfaceNormal) * transform.rotation;
+            transform.position = hit.point + (transform.up * 0.1f);
+        }
+
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection *= speed;
