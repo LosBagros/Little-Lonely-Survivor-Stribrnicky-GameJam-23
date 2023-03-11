@@ -13,7 +13,9 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody planetRigidbody;
 
     private Animator animator;
-    
+
+    private Vector3 mousePosition;
+
 
     void Start()
     {
