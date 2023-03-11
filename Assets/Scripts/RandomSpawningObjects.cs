@@ -14,7 +14,7 @@ public class RandomSpawningObjects : MonoBehaviour
         {
             int randomIndex = Random.Range(0, availableSpawnPoints.Count);
             Transform spawnPoint = availableSpawnPoints[randomIndex];
-            Instantiate(objectToSpawn[i], spawnPoint.position, spawnPoint.rotation);
+            Instantiate(objectToSpawn[i], spawnPoint.position, spawnPoint.rotation).transform.localScale = Vector3.one * 50;
             availableSpawnPoints.RemoveAt(randomIndex);
         }
     }
