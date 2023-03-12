@@ -18,7 +18,7 @@ public class SettingsMenu : MonoBehaviour
 
     [SerializeField]
     private AudioSource audioSource;
-    
+
 
     void Start()
     {
@@ -88,5 +88,5 @@ public class SettingsMenu : MonoBehaviour
         Time.timeScale = 1f;
         UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
     }
-
+    
 }
