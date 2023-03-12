@@ -68,6 +68,7 @@ public class SC_RigidbodyWalker : MonoBehaviour
                 CollectItem.Lpodstava = false;
                 CollectItem.Lcannon = false;
                 CollectItem.Lraketa = false;
+                text.gameObject.SetActive(false);
                 StartCoroutine(ChangeScene());
 
             }
