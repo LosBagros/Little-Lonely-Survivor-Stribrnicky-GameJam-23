@@ -290,7 +290,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunHead: {fileID: 1108732460}
-  explosionPre: {fileID: 8649388638287951264, guid: 4b8236b2abe977b4d95d4d7ed8e02180, type: 3}
   gunBody: {fileID: 1108732458}
   spawnPoint: {fileID: 1834358962}
   ballPrefab: {fileID: -8824960293433775410, guid: 114a4ed6669650d40849894f23ddef3c, type: 3}

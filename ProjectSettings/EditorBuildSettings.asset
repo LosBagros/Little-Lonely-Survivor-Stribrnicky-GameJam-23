@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 8b4e2f5dd95de054ba955bb7ed11e076
+  - enabled: 1
+    path: Assets/Scenes/LittlePlanet.unity
+    guid: 2ee1d3152407b3f4ca71c67017bb95f2
+  - enabled: 1
+    path: Assets/Scenes/TurretScene.unity
+    guid: 4f59c975019e0f943847e518f62cf8f5
   m_configObjects: {}

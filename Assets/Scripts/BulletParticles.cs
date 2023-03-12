@@ -1,28 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class BulletParticles : MonoBehaviour
 {
+    [SerializeField]
     private ParticleSystem ps;
 
     void Start()
     {
-        //ps = GameObject.Find("ExplosionMAIN").GetComponent<ParticleSystem>();
+       
     }
 
     void Update()
     {
+        
 
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
 
-        
-        Destroy(gameObject);
+        if (ps != null)
+        {
+            ps.gameObject.SetActive(true);
+            ps.Play();
+            
+            //ps.Play();
+        }
+        if (gameObject.activeSelf)
+        {
+            //gameObject.SetActive(false);
+            Destroy(gameObject,0.5f);
+        }
     }
-
-    
 }
