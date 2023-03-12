@@ -8,7 +8,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 8b4e2f5dd95de054ba955bb7ed11e076
-  - enabled: 1
-    path: Assets/Scenes/Turret.unity
-    guid: 10f8687bafa06c64fa18af58f9313014
   m_configObjects: {}
