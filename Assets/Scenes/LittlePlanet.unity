@@ -50587,7 +50587,7 @@ MonoBehaviour:
   - {fileID: 874895097}
   - {fileID: 874895096}
   player: {fileID: 543450653541546217}
-  distanceToShowOutlines: 50
+  distanceToShowOutlines: 75
   distanceToRemoveObject: 3.5
 --- !u!1 &6048563979835365352
 GameObject:
