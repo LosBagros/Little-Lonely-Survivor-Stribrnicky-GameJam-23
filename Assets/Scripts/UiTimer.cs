@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UiTimer : MonoBehaviour
 {
     [SerializeField]
     private TMPro.TextMeshProUGUI timeText;
 
+    [SerializeField]
     private float timer = 150;
     
     void Update()
@@ -19,6 +21,8 @@ public class UiTimer : MonoBehaviour
         else
         {
             timeText.text = "00:00:00";
+            // load scene lose
+            SceneManager.LoadScene("Lose");
         }
 
     }
