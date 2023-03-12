@@ -236,7 +236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -54}
   m_SizeDelta: {x: 236.1302, y: 84.1369}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &32573812
@@ -749,7 +749,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 157}
-  m_SizeDelta: {x: 635.1476, y: 101.4367}
+  m_SizeDelta: {x: 999.6497, y: 101.4367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &279233774
 MonoBehaviour:
@@ -771,10 +771,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <NAZEV></>
+  m_text: <Little Lonely Survivor></>
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 36fb49629cf8a5b4fa03317403aa0163, type: 2}
+  m_sharedMaterial: {fileID: 1387006809178511181, guid: 36fb49629cf8a5b4fa03317403aa0163, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2006,7 +2006,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -135}
+  m_AnchoredPosition: {x: 0, y: -151}
   m_SizeDelta: {x: 377.6812, y: 83.0329}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &504268947
