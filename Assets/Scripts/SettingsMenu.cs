@@ -18,6 +18,7 @@ public class SettingsMenu : MonoBehaviour
 
     [SerializeField]
     private AudioSource audioSource;
+    
 
     void Start()
     {
@@ -71,4 +72,21 @@ public class SettingsMenu : MonoBehaviour
     {
         audioSource.PlayOneShot(otec, 1f);
     }
+
+    public void ResumeTime()
+    {
+        Time.timeScale = 1f;
+    }
+
+    public void PauseTime()
+    {
+        Time.timeScale = 0f;
+    }
+
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1f;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
+    }
+
 }
