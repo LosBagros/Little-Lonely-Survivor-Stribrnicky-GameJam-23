@@ -51,6 +51,11 @@ public class PlayerAnimate : MonoBehaviour
         {
             animator.SetTrigger("BackFlip");
         }
-    }
 
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            animator.SetTrigger("Shuffling");
+        }
+    }
+    
 }
