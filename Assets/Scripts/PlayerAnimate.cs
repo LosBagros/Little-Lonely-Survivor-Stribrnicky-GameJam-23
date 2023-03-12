@@ -46,6 +46,11 @@ public class PlayerAnimate : MonoBehaviour
         {
             animator.SetBool("isWalking", false);
         }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            animator.SetTrigger("BackFlip");
+        }
     }
 
 }
