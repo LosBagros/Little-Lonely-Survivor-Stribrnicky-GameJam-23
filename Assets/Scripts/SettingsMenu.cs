@@ -19,9 +19,14 @@ public class SettingsMenu : MonoBehaviour
     [SerializeField]
     private AudioSource audioSource;
 
+    [SerializeField]
+    private GameObject mainCamera;
 
+    private AudioSource music;
+    
     void Start()
     {
+        music = mainCamera.GetComponentInChildren<AudioSource>();
         resolutions = Screen.resolutions;
 
         resolutionDropdown.ClearOptions();
@@ -67,10 +72,22 @@ public class SettingsMenu : MonoBehaviour
     {
         Screen.fullScreen = isFullscreen;
     }
-    
+
     public void AudioTest()
     {
-        audioSource.PlayOneShot(otec, 1f);
+        music.Stop();
+        // wait 2 seconds
+        Invoke("PlayOtec", 0.4f);
+    }
+
+    private void PlayOtec()
+    {
+        audioSource.PlayOneShot(otec, 3f);
+        Invoke("ResetMusic", 0.4f);
+    }
+    private void ResetMusic()
+    {
+        music.Play();
     }
 
     public void ResumeTime()
