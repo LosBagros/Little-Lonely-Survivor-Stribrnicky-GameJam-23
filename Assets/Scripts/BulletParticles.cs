@@ -9,7 +9,7 @@ public class BulletParticles : MonoBehaviour
 
     void Start()
     {
-        ps = GameObject.Find("ExplosionMAIN").GetComponent<ParticleSystem>();
+        //ps = GameObject.Find("ExplosionMAIN").GetComponent<ParticleSystem>();
     }
 
     void Update()
