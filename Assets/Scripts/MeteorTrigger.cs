@@ -12,6 +12,8 @@ public class MeteorTrigger : MonoBehaviour
         if (other.gameObject.layer == 8)
         {
             SceneManager.LoadScene("Lose");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;         
         }
     }
 }
