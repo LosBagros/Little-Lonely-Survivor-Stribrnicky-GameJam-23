@@ -6062,6 +6062,7 @@ MonoBehaviour:
   resolutionDropdown: {fileID: 1848251278}
   otec: {fileID: 8300000, guid: 1860253b071b4c54ca245b3f6768d5f2, type: 3}
   audioSource: {fileID: 1935327343}
+  mainCamera: {fileID: 1204966220}
 --- !u!1 &1739654615
 GameObject:
   m_ObjectHideFlags: 0
