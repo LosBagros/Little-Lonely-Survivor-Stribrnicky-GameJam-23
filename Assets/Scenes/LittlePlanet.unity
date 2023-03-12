@@ -1602,7 +1602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 79928688}
-  timer: 10
+  timer: 150
 --- !u!114 &79928688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48597,6 +48597,7 @@ GameObject:
   - component: {fileID: 1859711724}
   - component: {fileID: 1859711725}
   - component: {fileID: 1859711727}
+  - component: {fileID: 1859711728}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -48703,6 +48704,20 @@ MonoBehaviour:
   outlineShaderMaterial: {fileID: 0}
   renderTexture: {fileID: 0}
   extraRenderTexture: {fileID: 0}
+--- !u!114 &1859711728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859711723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5407ce430ebdeaf47951e86d89e79d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: d9e70fb83fea8f54892daf47097f5f52, type: 3}
+  audioMixer: {fileID: 24100000, guid: 127f9c7c3042739428a82013755df609, type: 2}
 --- !u!1 &1872179206
 GameObject:
   m_ObjectHideFlags: 0
