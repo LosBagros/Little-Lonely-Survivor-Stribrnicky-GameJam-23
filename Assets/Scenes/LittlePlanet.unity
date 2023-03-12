@@ -2974,6 +2974,7 @@ MonoBehaviour:
   lookSpeed: 2
   lookXLimit: 60
   objectToSpawn: {fileID: 1707394173269539460}
+  text: {fileID: 1242191038}
 --- !u!136 &110103751
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -31438,7 +31439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1242191037
 RectTransform:
   m_ObjectHideFlags: 0
