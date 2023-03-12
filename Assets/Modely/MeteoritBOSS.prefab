@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599466491465856851}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.3418341}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0.5942655, z: 0}
+  m_LocalScale: {x: 2.6945236, y: 2.6349516, z: 1.5840757}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8711859155256740958}
-  m_RootOrder: 0
+  m_Father: {fileID: 8711859155851504873}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &2367083127468406327
 ParticleSystem:
@@ -4897,11 +4897,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8711859155256740945}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0.29406792, z: 0}
-  m_LocalScale: {x: 1.7064706, y: 1.6687434, z: 1.0032122}
+  m_LocalPosition: {x: 0, y: -0.205, z: 0}
+  m_LocalScale: {x: 4.248135, y: 4.154216, z: 2.4974241}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1178405378014852977}
+  m_Children: []
   m_Father: {fileID: 8711859155851504873}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -9758,7 +9757,7 @@ GameObject:
   - component: {fileID: 5205797186821437646}
   - component: {fileID: 1659605077301997619}
   m_Layer: 6
-  m_Name: Meteorit
+  m_Name: MeteoritBOSS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9773,10 +9772,11 @@ Transform:
   m_GameObject: {fileID: 8711859155851504877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8711859155256740958}
+  - {fileID: 1178405378014852977}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

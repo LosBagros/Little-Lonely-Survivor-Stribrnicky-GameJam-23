@@ -5,6 +5,9 @@ public class BulletParticles : MonoBehaviour
     [SerializeField]
     private ParticleSystem ps;
 
+    [SerializeField]
+    private LayerMask meteoritMask;
+
     void Start()
     {
        
@@ -31,6 +34,11 @@ public class BulletParticles : MonoBehaviour
         {
             //gameObject.SetActive(false);
             Destroy(gameObject,0.5f);
+        }
+
+        if (other.gameObject.layer == 6)
+        {
+            Destroy(other.gameObject);
         }
     }
 }
