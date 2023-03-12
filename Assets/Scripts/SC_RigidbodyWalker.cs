@@ -65,6 +65,9 @@ public class SC_RigidbodyWalker : MonoBehaviour
             {
                 Instantiate(objectToSpawn, transform.position, transform.rotation);
                 CanSpawn = false;
+                CollectItem.Lpodstava = false;
+                CollectItem.Lcannon = false;
+                CollectItem.Lraketa = false;
                 StartCoroutine(ChangeScene());
 
             }
