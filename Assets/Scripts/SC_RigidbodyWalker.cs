@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CapsuleCollider))]
@@ -13,11 +14,15 @@ public class SC_RigidbodyWalker : MonoBehaviour
     public Camera playerCamera;
     public float lookSpeed = 2.0f;
     public float lookXLimit = 60.0f;
+    private bool CanSpawn = true;
 
     bool grounded = false;
     Rigidbody r;
     Vector2 rotation = Vector2.zero;
     float maxVelocityChange = 10.0f;
+
+    [SerializeField]
+    private GameObject objectToSpawn;
 
     void Awake()
     {
@@ -48,6 +53,25 @@ public class SC_RigidbodyWalker : MonoBehaviour
         {
             speed = 5.0f;
         }
+        
+        if (Input.GetKeyDown(KeyCode.E) && CollectItem.Lpodstava && CollectItem.Lcannon && CollectItem.Lraketa)
+        {
+            if (CanSpawn)
+            {
+                Instantiate(objectToSpawn, transform.position, transform.rotation);
+                CanSpawn = false;
+                StartCoroutine(ChangeScene());
+
+            }
+            
+            
+        }
+    }
+
+    IEnumerator ChangeScene()
+    {
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene("Turret");
     }
 
     void FixedUpdate()
@@ -79,7 +103,9 @@ public class SC_RigidbodyWalker : MonoBehaviour
         grounded = false;
     }
 
-    void OnCollisionStay()
+
+
+void OnCollisionStay()
     {
         grounded = true;
     }

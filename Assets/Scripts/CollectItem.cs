@@ -35,11 +35,17 @@ public class CollectItem : MonoBehaviour
     [SerializeField]
     private GameObject cannonObj;
 
+    public static bool Lcannon = false;
+    public static bool Lpodstava = false;
+    public static bool Lraketa = false;
+
+
     void Start()
     {
         Podstava(false);
         Raketa(false);
         Cannon(false);
+
     }
 
     public void Raketa(bool status)
@@ -84,20 +90,25 @@ public class CollectItem : MonoBehaviour
             {
                 Podstava(true);
                 Debug.Log("podstava");
+                Lpodstava = true;
             }
             else if(gameObject.name == "StartingMechanism5.2(Clone)")
             {
                 Cannon(true);
                 Debug.Log("canon");
+                Lcannon = true;
             }
             else if (gameObject.name == "StartingMechanism5.3(Clone)")
             {
                 Raketa(true);
                 Debug.Log("raketa");
+                Lraketa = true;
             }
                 
             Destroy(gameObject);
             
         }
+
+
     }
 }
