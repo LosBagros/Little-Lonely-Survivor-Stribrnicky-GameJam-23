@@ -4,34 +4,49 @@ using cakeslice;
 
 public class ObjectHighlighter : MonoBehaviour
 {
-    public float outlineThreshold = 10f; // Vzdálenost, ve které se bude objevovat outline
-    public Collider triggerCollider; // Collider definující oblast, ve které se bude zobrazovat outline
+    public List<Outline> outlinedObjects = new List<Outline>();
+    public Transform player;
+    public float distanceToShowOutlines = 50f;
+    public float distanceToRemoveObject = 4f;
 
-    private List<Outline> outlines = new List<Outline>(); // Seznam objektù s outline
-
-    private void OnTriggerEnter(Collider other)
+    void Start()
     {
-        // Najdeme komponentu Outline na objektu, který vstoupil do triggerCollideru
-        var objWithOutline = other.GetComponent<Outline>();
-
-        // Pokud se v collideru nachází objekt s outline a zatím není v seznamu, pøidáme ho
-        if (objWithOutline != null && !outlines.Contains(objWithOutline))
+        // pøidá všechny objekty v scénì s komponentou Outline do seznamu outlinedObjects
+        var outlinedObjectsInScene = FindObjectsOfType<Outline>();
+        foreach (var obj in outlinedObjectsInScene)
         {
-            outlines.Add(objWithOutline);
-            objWithOutline.enabled = true; // Zobrazíme outline
+            outlinedObjects.Add(obj);
+        }
+
+        // vypne obrysy na zaèátku
+        ToggleOutlines(false);
+    }
+
+    void Update()
+    {
+        // zapne / vypne obrysy, když je hráè dostateènì blízko objektu
+        foreach (var obj in outlinedObjects)
+        {
+            if (obj == null)
+            {
+                outlinedObjects.Remove(obj);
+                continue;
+            }
+            float distanceToPlayer = Vector3.Distance(player.position, obj.transform.position);
+            bool showOutline = distanceToPlayer <= distanceToShowOutlines;
+            obj.enabled = showOutline;
+
+           
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    public void ToggleOutlines(bool enabled)
     {
-        // Najdeme komponentu Outline na objektu, který opustil triggerCollider
-        var objWithOutline = other.GetComponent<Outline>();
-
-        // Pokud se v collideru nachází objekt s outline a je v seznamu, odebereme ho
-        if (objWithOutline != null && outlines.Contains(objWithOutline))
+        foreach (var obj in outlinedObjects)
         {
-            outlines.Remove(objWithOutline);
-            objWithOutline.enabled = false; // Skryjeme outline
+            obj.enabled = enabled;
         }
     }
 }
+
+

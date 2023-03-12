@@ -15,6 +15,9 @@ namespace cakeslice
 
         public int color;
         public bool eraseRenderer;
+        
+
+        
 
         private void Awake()
         {
@@ -24,12 +27,12 @@ namespace cakeslice
             MeshFilter = GetComponent<MeshFilter>();
         }
 
-        void OnEnable()
+        public void OnEnable()
         {
             OutlineEffect.Instance?.AddOutline(this);
         }
 
-        void OnDisable()
+        public void OnDisable()
         {
             OutlineEffect.Instance?.RemoveOutline(this);
         }
@@ -49,5 +52,9 @@ namespace cakeslice
                 _SharedMaterials = value;
             }
         }
+
+        }
+       
     }
-}
+
+
