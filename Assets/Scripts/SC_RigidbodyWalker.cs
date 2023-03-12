@@ -24,6 +24,9 @@ public class SC_RigidbodyWalker : MonoBehaviour
     [SerializeField]
     private GameObject objectToSpawn;
 
+    [SerializeField]
+    private TMPro.TextMeshProUGUI text;
+
     void Awake()
     {
         r = GetComponent<Rigidbody>();
@@ -53,7 +56,9 @@ public class SC_RigidbodyWalker : MonoBehaviour
         {
             speed = 5.0f;
         }
-        
+        if(CollectItem.Lpodstava && CollectItem.Lcannon && CollectItem.Lraketa) {
+            text.gameObject.SetActive(true);
+        }
         if (Input.GetKeyDown(KeyCode.E) && CollectItem.Lpodstava && CollectItem.Lcannon && CollectItem.Lraketa)
         {
             if (CanSpawn)
