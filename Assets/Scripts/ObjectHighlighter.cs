@@ -27,14 +27,13 @@ public class ObjectHighlighter : MonoBehaviour
         // zapne / vypne obrysy, když je hráè dostateènì blízko objektu
         foreach (var obj in outlinedObjects)
         {
-            if (obj == null)
+            if (obj != null)
             {
-                outlinedObjects.Remove(obj);
-                continue;
+                float distanceToPlayer = Vector3.Distance(player.position, obj.transform.position);
+                bool showOutline = distanceToPlayer <= distanceToShowOutlines;
+                obj.enabled = showOutline;
             }
-            float distanceToPlayer = Vector3.Distance(player.position, obj.transform.position);
-            bool showOutline = distanceToPlayer <= distanceToShowOutlines;
-            obj.enabled = showOutline;
+
 
            
         }
