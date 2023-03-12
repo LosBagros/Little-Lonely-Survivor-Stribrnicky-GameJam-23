@@ -7,6 +7,9 @@ public class MouseFollow : MonoBehaviour
 {
     [SerializeField]
     private Transform ballPrefabTran;
+
+    [SerializeField]
+    private ParticleSystem explosionPre;
     
     private Rigidbody ballPrefab;
     
@@ -55,6 +58,9 @@ public class MouseFollow : MonoBehaviour
 
             rb.AddForce(GetDirection() * force, ForceMode.Impulse);
             Destroy(rb.gameObject, 5f);
+
+            
+            
         }
     }
 

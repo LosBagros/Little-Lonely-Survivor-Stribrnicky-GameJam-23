@@ -51,11 +51,11 @@ public class GunControls : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Mouse Clicked");
+            //Debug.Log("Mouse Clicked");
             var rb = Instantiate(ballPrefab, gunHead.position, gunHead.rotation);
 
             rb.AddForce(GetDirection() * force, ForceMode.Impulse);
-            Destroy(rb.gameObject, 5f);
+            
         }
     }
 
