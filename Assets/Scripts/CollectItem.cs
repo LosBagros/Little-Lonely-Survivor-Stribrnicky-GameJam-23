@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class CollectItem : MonoBehaviour
 {
@@ -34,6 +35,15 @@ public class CollectItem : MonoBehaviour
 
     [SerializeField]
     private GameObject cannonObj;
+
+    [SerializeField]
+    private AudioSource audioSource;
+
+    [SerializeField]
+    private AudioMixer audioMixer;
+
+    [SerializeField]
+    private AudioClip audioClip;
 
     public static bool Lcannon = false;
     public static bool Lpodstava = false;
@@ -104,7 +114,8 @@ public class CollectItem : MonoBehaviour
                 Debug.Log("raketa");
                 Lraketa = true;
             }
-                
+
+            audioSource.PlayOneShot(audioClip, 3f);
             Destroy(gameObject);
             
         }

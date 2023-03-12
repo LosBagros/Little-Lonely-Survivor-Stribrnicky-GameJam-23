@@ -3,7 +3,20 @@ guid: 746308b4d6c387b4bb875a84ed06d1bb
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - player: {instanceID: 0}
+  - podstava: {instanceID: 0}
+  - podstavaDark: {instanceID: 0}
+  - raketa: {instanceID: 0}
+  - raketaDark: {instanceID: 0}
+  - cannon: {instanceID: 0}
+  - cannonDark: {instanceID: 0}
+  - podstavaObj: {instanceID: 0}
+  - raketaObj: {instanceID: 0}
+  - cannonObj: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - audioMixer: {instanceID: 0}
+  - audioClip: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
