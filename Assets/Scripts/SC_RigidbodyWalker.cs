@@ -71,7 +71,7 @@ public class SC_RigidbodyWalker : MonoBehaviour
     IEnumerator ChangeScene()
     {
         yield return new WaitForSeconds(1.0f);
-        SceneManager.LoadScene("Turret");
+        SceneManager.LoadScene("TurretScene");
     }
 
     void FixedUpdate()
