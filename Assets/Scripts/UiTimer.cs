@@ -21,6 +21,7 @@ public class UiTimer : MonoBehaviour
         else
         {
             timeText.text = "00:00:00";
+
             // load scene lose
             SceneManager.LoadScene("Lose");
         }

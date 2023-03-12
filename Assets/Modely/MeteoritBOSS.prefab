@@ -9756,6 +9756,7 @@ GameObject:
   - component: {fileID: 8711859155851504876}
   - component: {fileID: 5205797186821437646}
   - component: {fileID: 1659605077301997619}
+  - component: {fileID: 3597937482117661304}
   m_Layer: 7
   m_Name: MeteoritBOSS
   m_TagString: Untagged
@@ -9838,7 +9839,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8711859155851504877}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -9883,3 +9884,15 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
+--- !u!114 &3597937482117661304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8711859155851504877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a471aa1aff2c27243ae82baea98fbb6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
