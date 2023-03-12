@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BulletParticles : MonoBehaviour
 {
@@ -41,6 +42,9 @@ public class BulletParticles : MonoBehaviour
             if (MeteorSpawner.bossLifes <= 0)
             {
                 Destroy(other.gameObject);
+
+                SceneManager.LoadScene("Victory");
+
             }
         }
     }

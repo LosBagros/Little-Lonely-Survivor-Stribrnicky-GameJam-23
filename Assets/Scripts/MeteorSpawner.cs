@@ -78,6 +78,8 @@ public class MeteorSpawner : MonoBehaviour
                 bmrb = meteorBOSS.GetComponent<Rigidbody>();
 
                 bmrb.AddForce(-Vector3.up * speed, ForceMode.Acceleration);
+
+                
             }
         }
         else
