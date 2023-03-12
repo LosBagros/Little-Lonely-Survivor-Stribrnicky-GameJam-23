@@ -5821,10 +5821,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRef: {fileID: 605938298}
   meteorPre: {fileID: 8711859155851504873, guid: 8d067f48d16f9044782ebe5a454844dd, type: 3}
-  bossLifeCount: 3
+  bossLifeCount: 10
   bigMeteorPre: {fileID: 8711859155851504873, guid: 2edd8d294671c2146bd9c21575ac36ce, type: 3}
   metCount: 20
-  howManyToKill: 3
+  howManyToKill: 1
   secondsToSpawn: 5
   speed: 10
   whereToSpawn: 70

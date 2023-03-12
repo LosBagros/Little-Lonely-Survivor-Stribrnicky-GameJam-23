@@ -18,6 +18,7 @@ public class MeteorSpawner : MonoBehaviour
     [SerializeField]
     private Transform bigMeteorPre;
 
+    private Rigidbody bmrb;
     private Rigidbody mrb;
 
     [SerializeField]
@@ -26,10 +27,11 @@ public class MeteorSpawner : MonoBehaviour
     [SerializeField]
     private int howManyToKill;
 
-    private int destroyed;
+    private int destroyed = 0;
 
     [SerializeField]
     private float secondsToSpawn;
+
     [SerializeField]
     private float speed;
 
@@ -37,13 +39,16 @@ public class MeteorSpawner : MonoBehaviour
 
     [SerializeField]
     private int whereToSpawn;
-   
+
+    [SerializeField]
+    public static int bossLifes;
+
+    private bool bossIsAlive = false;
 
     void Start()
     {
-        
         SecondsToSpawn = secondsToSpawn;
-        
+        bossLifes = bossLifeCount;
     }
 
     void Update()
@@ -51,33 +56,28 @@ public class MeteorSpawner : MonoBehaviour
         if (metCount > 0)
         {
             secondsToSpawn -= Time.deltaTime;
-            Debug.Log(secondsToSpawn);
+
             if (secondsToSpawn < 0)
             {
-
                 DoSpawn();
-                Debug.Log("voeouvebavbaebvoabnev");
                 secondsToSpawn = SecondsToSpawn;
             }
-            
-
         }
-
     }
 
     private void DoSpawn()
     {
-
         if (howManyToKill <= destroyed)
         {
-            Debug.Log("BOSSFIGHT");
-            var meteorBOSS = Instantiate(meteorPre, new Vector3(transform.position.x, 400, transform.position.z), Quaternion.identity);
-
-
-
-            if (bossLifeCount <= 0)
+            if (!bossIsAlive)
             {
-                Destroy(meteorBOSS, 0.1f);
+                Debug.Log("BOSSFIGHT");
+                var meteorBOSS = Instantiate(bigMeteorPre, new Vector3(transform.position.x, 400, transform.position.z), Quaternion.identity);
+                bossIsAlive = true;
+
+                bmrb = meteorBOSS.GetComponent<Rigidbody>();
+
+                bmrb.AddForce(-Vector3.up * speed, ForceMode.Acceleration);
             }
         }
         else
@@ -91,6 +91,6 @@ public class MeteorSpawner : MonoBehaviour
             mrb.AddForce(-Vector3.up * speed, ForceMode.Acceleration);
 
             destroyed++;
-        }  
+        }
     }
 }
