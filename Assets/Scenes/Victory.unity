@@ -487,8 +487,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0, g: 0.5236663, b: 0.990566, a: 0.5882353}
+    m_PressedColor: {r: 0, g: 0.4024806, b: 1, a: 0.8352941}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1304,6 +1304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543450653216632620}
   - component: {fileID: 5866666021520389462}
+  - component: {fileID: 5866666021520389463}
   m_Layer: 0
   m_Name: Shuffling
   m_TagString: Untagged
@@ -2088,7 +2089,7 @@ Animator:
   m_GameObject: {fileID: 919132149546628502}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: b6c7afea26d364c4696d780805f2d7e0, type: 3}
-  m_Controller: {fileID: 9100000, guid: dba925ffc44998a42ba5dbccc00f31f8, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6e18a696fc5478d4a9a7f0302062c367, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2099,6 +2100,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5866666021520389463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149546628502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55fb2bcb8465efb4bb6175d19b2de7c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 5866666021909216657, guid: b6c7afea26d364c4696d780805f2d7e0, type: 3}
 --- !u!1 &6048563979644370989
 GameObject:
   m_ObjectHideFlags: 0
