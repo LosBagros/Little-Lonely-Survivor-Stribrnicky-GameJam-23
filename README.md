@@ -1,33 +1,38 @@
-# A Little Planet
-Hra ve které musíte posírat součástky na postavení děla a posléze ubránit vaší planetku.
+# Theme - A Little Planet
 
-## Ovládání
-**W** - Pohyb dopředu
-
-**A** - Pohyb doleva
-
-**S** - Pohyb dolů
-
-**D** - Pohyb doprava 
-
-**Shift** - Běh
+**Little Lonely Survivor** je hra, která vznikla během 48 hodinového gamejamu - [1. Stříbrnický GameJam](https://itch.io/jam/stribrnicky-gamejam/). Cílem této hry je zabránit pádu meteoritů na vaši planetu tím, že se budete muset rychle sesbírat všechny části děla a poté sestřelit všechny malé meteority. Jakmile sesetřelíte 10 malých meteoritů, na planetu začne padat jeden velký meteorit. Musíte se mu však bránit za každou cenu!
 
 
-**E** - Aktivace
-
-**F**- Back Flip
-
-**G** - Taneček
+**Little Lonely Survivor** is a game that was created during a 48-hour game jam - [1st Stříbrnický GameJam](https://itch.io/jam/stribrnicky-gamejam/). The goal of the game is to prevent meteorites from falling onto your planet by quickly collecting all the parts of a cannon and then shooting down all the small meteorites. Once you have shot down 10 small meteorites, a large meteorite will begin to fall onto the planet. You must defend against it at all costs! 
 
 
-## Příběh
-Na vaší planetu začnou padat mateority a vy tomu musíte zabránit, máte jen chvíli na to aby jste sesbírali všechny části děla a poté sestřelili všechny meteority. Poté co sesetřelíte 10 malých tak na planetu začne padat jeden velký meteorit. Zabraň tomu!
+## Controls
+**W** - Move forward
 
-## Screenshoty
+**A** - Move left
+
+**S** - Move down
+
+**D** - Move right
+
+**Shift** - Run
+
+
+**E** - Activate
+
+**F** - Back Flip
+
+**G** - Dance
+
+## Screenshots
 ![enter image description here](https://github.com/LosBagros/ALittlePlanet---StribrnikyGameJam/blob/master/images/image%20%281%29.jpg?raw=true)
+
 ![enter image description here](https://github.com/LosBagros/ALittlePlanet---StribrnikyGameJam/blob/master/images/image%20%282%29.jpg?raw=true)
+
 ![enter image description here](https://github.com/LosBagros/ALittlePlanet---StribrnikyGameJam/blob/master/images/image%20%283%29.jpg?raw=true)
+
 ![enter image description here](https://github.com/LosBagros/ALittlePlanet---StribrnikyGameJam/blob/master/images/image%20%284%29.jpg?raw=true)
+
 ![enter image description here](https://github.com/LosBagros/ALittlePlanet---StribrnikyGameJam/blob/master/images/image%20%285%29.jpg?raw=true)
 
 [Lagemaxl](https://ladislavpokorny.wtf/) - Programming
